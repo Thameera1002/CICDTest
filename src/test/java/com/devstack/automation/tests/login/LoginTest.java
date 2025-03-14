@@ -18,12 +18,12 @@ public class LoginTest extends BaseTest {
 
     }
 
-//    @Test(dataProvider = "commonDataProvider" , dataProviderClass = ExcelHandler.class)
-//    public void loginFailTest(LoginTestData loginTestData) {
-//        LIB_Common common = new LIB_Common(driver);
-////        common.bc_login(PropertyHandler.getProperty("username"), PropertyHandler.getProperty("password"));
-//        common.bc_login(loginTestData.getUserName(), loginTestData.getPassword());
-//
-//
-//    }
+    @Test(dataProvider = "commonDataProvider" , dataProviderClass = ExcelHandler.class)
+    public void loginFailTest(LoginTestData loginTestData) {
+        LIB_Common common = new LIB_Common(driver);
+//        common.bc_login(PropertyHandler.getProperty("username"), PropertyHandler.getProperty("password"));
+        common.bc_login(loginTestData.getUserName(), loginTestData.getPassword());
+
+
+    }
 }
